@@ -1,0 +1,47 @@
+round(0.47-1.96*sqrt(.53*.47/100),2)
+round(0.47+1.96*sqrt(.53*.47/100),2)
+a <- c(2.0,2.5,4.1,1.8,4.)
+a
+round(1/mean(a),2)
+x <- c(-1.2,0.5,0.8,-0.3)
+round(mean(x),2)
+1+2+3
+z <- c(2,3,4,5,6)
+z
+mean(z)
+sd(z)
+sqrt(var(z))
+seq(from=.1,to=0.9,by=.1)
+seq(.1,.9,.1)
+seq(1,10)
+trees
+attach(trees)
+names(trees)
+hist(Girth)
+plot(Girth, Height)
+pairs(trees)
+likelihood = function(n,y,theta){return(theta^y*(1-theta)^(n-y))}
+theta = seq(.01, .99, .01)
+theta
+plot(theta, likelihood(400,72,theta))
+abline(v=.18)
+loglike = function(n, y, theta){return(y*log(theta)+(n-y)*log(1-theta))}
+plot(theta, loglike(400, 72, theta))
+abline(v=.18)
+plot(theta, loglike(400, 72, theta), type = 'l')
+abline(v=.18)
+dnorm(0,0,1)
+pnorm(0,0,1)
+qnorm(0.025,0,1)
+pnorm(-1.96,0,1)
+rnorm(10)
+
+round(dpois(1,3),3)
+round(dpois(0,3),3)
+round(dpois(0,3)+dpois(1,3),3)
+round(ppois(1,3),3)
+round(1-ppois(1,3),3)
+round(pgamma(1.5,2,1/3)-pgamma(0.5,2,1/3),3)
+round(qnorm(0.975), 3)
+round(pnorm(1.96)-pnorm(-1.96),3)
+round(qnorm(0.95),2)
